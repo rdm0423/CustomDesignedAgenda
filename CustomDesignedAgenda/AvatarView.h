@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  AvatarView.h
 //  CustomDesignedAgenda
 //
 //  Created by Joshua Howland on 3/15/15.
@@ -7,9 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "SectionHeaderView.h"
 
-@interface ViewController : UIViewController
+@interface AvatarView : UIImageView
 
 @end
-

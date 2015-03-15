@@ -7,6 +7,7 @@
 //
 
 #import "ViewControllerDataSource.h"
+#import "AvatarView.h"
 
 @implementation ViewControllerDataSource 
 
@@ -23,7 +24,16 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return [UITableViewCell new];
+    UITableViewCell *cell = [UITableViewCell new];
+
+
+    AvatarView *avatarView = [[AvatarView alloc] initWithFrame:CGRectMake(16, 0, 44, 44)];
+    UIImage *image = [UIImage imageNamed:@"avatar"];
+    [avatarView setImage:image];
+    
+    [cell.contentView addSubview:avatarView];
+
+    return cell;
 }
 
 @end

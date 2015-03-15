@@ -24,6 +24,7 @@
     self.dataSource = [ViewControllerDataSource new];
 
     self.tableView = [[UITableView alloc] initWithFrame:self.view.bounds];
+    self.tableView.translatesAutoresizingMaskIntoConstraints = NO;
     self.tableView.delegate = self;
     
     [self.dataSource registerTableView:self.tableView];
@@ -34,7 +35,18 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
-    return 0;
+    return [SectionHeaderView headerHeight];
+}
+
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
+
+    CGRect frame = CGRectMake(0, 0, tableView.frame.size.width, [SectionHeaderView headerHeight]);
+    
+    SectionHeaderView *sectionHeader = [[SectionHeaderView alloc] initWithFrame:frame];
+    [sectionHeader updateWithDate:@"April 14th" title:@"- TOMORROW"];
+    
+    return sectionHeader;
+    
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {

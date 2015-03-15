@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  SectionHeader.h
 //  CustomDesignedAgenda
 //
 //  Created by Joshua Howland on 3/15/15.
@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "SectionHeaderView.h"
 
-@interface ViewController : UIViewController
+@interface SectionHeaderView : UIView
+
++ (CGFloat)headerHeight;
+
+- (void)updateWithDate:(NSString *)dateString title:(NSString *)title;
 
 @end
-

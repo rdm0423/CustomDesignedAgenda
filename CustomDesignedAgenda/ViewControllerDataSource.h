@@ -9,6 +9,8 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
+#import "SectionHeaderView.h"
+
 @interface ViewControllerDataSource : NSObject <UITableViewDataSource>
 
 - (void)registerTableView:(UITableView *)tableView;

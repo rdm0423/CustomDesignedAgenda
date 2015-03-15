@@ -15,6 +15,8 @@
 		4FE5B1871AB57D28000641D5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FE5B1851AB57D28000641D5 /* LaunchScreen.xib */; };
 		4FE5B1931AB57D28000641D5 /* CustomDesignedAgendaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FE5B1921AB57D28000641D5 /* CustomDesignedAgendaTests.m */; };
 		4FE5B19E1AB57D92000641D5 /* ViewControllerDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FE5B19D1AB57D92000641D5 /* ViewControllerDataSource.m */; };
+		4FE5B1A11AB57FCC000641D5 /* SectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FE5B1A01AB57FCC000641D5 /* SectionHeaderView.m */; };
+		4FE5B1A41AB58B5E000641D5 /* AvatarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FE5B1A31AB58B5E000641D5 /* AvatarView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +45,10 @@
 		4FE5B1921AB57D28000641D5 /* CustomDesignedAgendaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomDesignedAgendaTests.m; sourceTree = "<group>"; };
 		4FE5B19C1AB57D92000641D5 /* ViewControllerDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerDataSource.h; sourceTree = "<group>"; };
 		4FE5B19D1AB57D92000641D5 /* ViewControllerDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerDataSource.m; sourceTree = "<group>"; };
+		4FE5B19F1AB57FCC000641D5 /* SectionHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SectionHeaderView.h; sourceTree = "<group>"; };
+		4FE5B1A01AB57FCC000641D5 /* SectionHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SectionHeaderView.m; sourceTree = "<group>"; };
+		4FE5B1A21AB58B5E000641D5 /* AvatarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AvatarView.h; sourceTree = "<group>"; };
+		4FE5B1A31AB58B5E000641D5 /* AvatarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AvatarView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +96,7 @@
 				4FE5B17E1AB57D28000641D5 /* ViewController.m */,
 				4FE5B19C1AB57D92000641D5 /* ViewControllerDataSource.h */,
 				4FE5B19D1AB57D92000641D5 /* ViewControllerDataSource.m */,
+				4FE5B1A51AB58FEB000641D5 /* Views */,
 				4FE5B1801AB57D28000641D5 /* Main.storyboard */,
 				4FE5B1831AB57D28000641D5 /* Images.xcassets */,
 				4FE5B1851AB57D28000641D5 /* LaunchScreen.xib */,
@@ -122,6 +129,17 @@
 				4FE5B1911AB57D28000641D5 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4FE5B1A51AB58FEB000641D5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4FE5B19F1AB57FCC000641D5 /* SectionHeaderView.h */,
+				4FE5B1A01AB57FCC000641D5 /* SectionHeaderView.m */,
+				4FE5B1A21AB58B5E000641D5 /* AvatarView.h */,
+				4FE5B1A31AB58B5E000641D5 /* AvatarView.m */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -224,8 +242,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FE5B1A11AB57FCC000641D5 /* SectionHeaderView.m in Sources */,
 				4FE5B17F1AB57D28000641D5 /* ViewController.m in Sources */,
 				4FE5B17C1AB57D28000641D5 /* AppDelegate.m in Sources */,
+				4FE5B1A41AB58B5E000641D5 /* AvatarView.m in Sources */,
 				4FE5B1791AB57D28000641D5 /* main.m in Sources */,
 				4FE5B19E1AB57D92000641D5 /* ViewControllerDataSource.m in Sources */,
 			);
