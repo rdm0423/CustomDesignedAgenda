@@ -17,6 +17,7 @@
 		4FE5B19E1AB57D92000641D5 /* ViewControllerDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FE5B19D1AB57D92000641D5 /* ViewControllerDataSource.m */; };
 		4FE5B1A11AB57FCC000641D5 /* SectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FE5B1A01AB57FCC000641D5 /* SectionHeaderView.m */; };
 		4FE5B1A41AB58B5E000641D5 /* AvatarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FE5B1A31AB58B5E000641D5 /* AvatarView.m */; };
+		4FE5B1AC1AB591C4000641D5 /* EventTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FE5B1AB1AB591C4000641D5 /* EventTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,8 @@
 		4FE5B1A01AB57FCC000641D5 /* SectionHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SectionHeaderView.m; sourceTree = "<group>"; };
 		4FE5B1A21AB58B5E000641D5 /* AvatarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AvatarView.h; sourceTree = "<group>"; };
 		4FE5B1A31AB58B5E000641D5 /* AvatarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AvatarView.m; sourceTree = "<group>"; };
+		4FE5B1AA1AB591C4000641D5 /* EventTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventTableViewCell.h; sourceTree = "<group>"; };
+		4FE5B1AB1AB591C4000641D5 /* EventTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +99,7 @@
 				4FE5B17E1AB57D28000641D5 /* ViewController.m */,
 				4FE5B19C1AB57D92000641D5 /* ViewControllerDataSource.h */,
 				4FE5B19D1AB57D92000641D5 /* ViewControllerDataSource.m */,
+				4FE5B1A91AB591B4000641D5 /* Cells */,
 				4FE5B1A51AB58FEB000641D5 /* Views */,
 				4FE5B1801AB57D28000641D5 /* Main.storyboard */,
 				4FE5B1831AB57D28000641D5 /* Images.xcassets */,
@@ -140,6 +144,15 @@
 				4FE5B1A31AB58B5E000641D5 /* AvatarView.m */,
 			);
 			name = Views;
+			sourceTree = "<group>";
+		};
+		4FE5B1A91AB591B4000641D5 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				4FE5B1AA1AB591C4000641D5 /* EventTableViewCell.h */,
+				4FE5B1AB1AB591C4000641D5 /* EventTableViewCell.m */,
+			);
+			name = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -245,6 +258,7 @@
 				4FE5B1A11AB57FCC000641D5 /* SectionHeaderView.m in Sources */,
 				4FE5B17F1AB57D28000641D5 /* ViewController.m in Sources */,
 				4FE5B17C1AB57D28000641D5 /* AppDelegate.m in Sources */,
+				4FE5B1AC1AB591C4000641D5 /* EventTableViewCell.m in Sources */,
 				4FE5B1A41AB58B5E000641D5 /* AvatarView.m in Sources */,
 				4FE5B1791AB57D28000641D5 /* main.m in Sources */,
 				4FE5B19E1AB57D92000641D5 /* ViewControllerDataSource.m in Sources */,

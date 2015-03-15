@@ -10,6 +10,7 @@
 #import <UIKit/UIKit.h>
 
 #import "SectionHeaderView.h"
+#import "EventTableViewCell.h"
 
 @interface ViewControllerDataSource : NSObject <UITableViewDataSource>
 

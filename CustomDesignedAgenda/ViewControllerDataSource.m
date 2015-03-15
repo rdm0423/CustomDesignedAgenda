@@ -13,6 +13,7 @@
 
 - (void)registerTableView:(UITableView *)tableView {
     
+    [tableView registerClass:[EventTableViewCell class] forCellReuseIdentifier:NSStringFromClass([EventTableViewCell class])];
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -24,15 +25,10 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [UITableViewCell new];
+    EventTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([EventTableViewCell class])];
 
-
-    AvatarView *avatarView = [[AvatarView alloc] initWithFrame:CGRectMake(16, 0, 44, 44)];
-    UIImage *image = [UIImage imageNamed:@"avatar"];
-    [avatarView setImage:image];
+    [cell updateWithTime:@"6:15 PM" Title:@"Dinner with Melissa" locationName:@"CAFE TRIO" avatar:[UIImage imageNamed:@"avatar"]];
     
-    [cell.contentView addSubview:avatarView];
-
     return cell;
 }
 
