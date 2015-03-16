@@ -67,7 +67,7 @@ const CGFloat leftMargin = 50;
         
         NSArray *constraints = [NSLayoutConstraint constraintsWithVisualFormat:@"V:|-25-[_eventTimeLabel]-[_titleLabel]-[_locationLabel]-[_avatarView(==40)]-25-|" options:NSLayoutFormatAlignAllLeft metrics:nil views:viewsDictionary];
         
-        NSArray *horizontalConstraints = [NSLayoutConstraint constraintsWithVisualFormat:@"H:|-50-[_avatarView(==40)]-|" options:0 metrics:nil views:viewsDictionary];
+        NSArray *horizontalConstraints = [NSLayoutConstraint constraintsWithVisualFormat:@"H:|-50-[_avatarView(==40)]" options:0 metrics:nil views:viewsDictionary];
         
         [self.contentView addConstraints:constraints];
         [self.contentView addConstraints:horizontalConstraints];
