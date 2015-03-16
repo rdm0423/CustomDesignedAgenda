@@ -26,6 +26,7 @@
     self.tableView = [[UITableView alloc] initWithFrame:self.view.bounds];
     self.tableView.translatesAutoresizingMaskIntoConstraints = NO;
     self.tableView.delegate = self;
+	self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     
     [self.dataSource registerTableView:self.tableView];
     self.tableView.dataSource = _dataSource;

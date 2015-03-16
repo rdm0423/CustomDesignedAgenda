@@ -14,4 +14,6 @@
 
 - (void)updateWithTime:(NSString *)time Title:(NSString *)title locationName:(NSString *)locationName avatar:(UIImage *)avatar;
 
+@property (nonatomic) BOOL drawsSeparator;
+
 @end

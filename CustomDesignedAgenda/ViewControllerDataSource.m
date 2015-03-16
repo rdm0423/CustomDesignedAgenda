@@ -28,7 +28,8 @@
     EventTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([EventTableViewCell class])];
 
     [cell updateWithTime:@"6:15 PM" Title:@"Dinner with Melissa" locationName:@"CAFE TRIO" avatar:[UIImage imageNamed:@"avatar"]];
-    
+	cell.drawsSeparator = indexPath.row != 1;
+	
     return cell;
 }
 
