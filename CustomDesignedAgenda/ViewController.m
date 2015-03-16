@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "ViewControllerDataSource.h"
+#import "EventCell.h"
 
 @interface ViewController () <UITableViewDelegate>
 
@@ -36,6 +37,11 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
     return [SectionHeaderView headerHeight];
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    return [EventCell height];
 }
 
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {

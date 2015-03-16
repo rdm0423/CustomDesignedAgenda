@@ -8,11 +8,12 @@
 
 #import "ViewControllerDataSource.h"
 #import "AvatarView.h"
+#import "EventCell.h"
 
 @implementation ViewControllerDataSource 
 
 - (void)registerTableView:(UITableView *)tableView {
-    
+    [tableView registerClass:[EventCell class] forCellReuseIdentifier:NSStringFromClass([EventCell class])];
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -24,15 +25,23 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [UITableViewCell new];
-
-
-    AvatarView *avatarView = [[AvatarView alloc] initWithFrame:CGRectMake(16, 0, 44, 44)];
-    UIImage *image = [UIImage imageNamed:@"avatar"];
-    [avatarView setImage:image];
     
-    [cell.contentView addSubview:avatarView];
+    EventCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([EventCell class]) forIndexPath:indexPath];
+    
+    [cell updateWithTime:@"6:15 PM"
+                   title:@"Dinner with Melissa"
+            locationName:@"Pago"
+                  avatar:[UIImage imageNamed:@"avatar"]];
+    
+//    UITableViewCell *cell = [UITableViewCell new];
 
+
+//    AvatarView *avatarView = [[AvatarView alloc] initWithFrame:CGRectMake(16, 0, 44, 44)];
+//    UIImage *image = [UIImage imageNamed:@"avatar"];
+//    [avatarView setImage:image];
+//    
+//    [cell.contentView addSubview:avatarView];
+//
     return cell;
 }
 

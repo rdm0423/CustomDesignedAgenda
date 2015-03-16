@@ -17,6 +17,7 @@
 		4FE5B19E1AB57D92000641D5 /* ViewControllerDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FE5B19D1AB57D92000641D5 /* ViewControllerDataSource.m */; };
 		4FE5B1A11AB57FCC000641D5 /* SectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FE5B1A01AB57FCC000641D5 /* SectionHeaderView.m */; };
 		4FE5B1A41AB58B5E000641D5 /* AvatarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FE5B1A31AB58B5E000641D5 /* AvatarView.m */; };
+		FF0C44E41AB73E7A007C7544 /* EventCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FF0C44E31AB73E7A007C7544 /* EventCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,8 @@
 		4FE5B1A01AB57FCC000641D5 /* SectionHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SectionHeaderView.m; sourceTree = "<group>"; };
 		4FE5B1A21AB58B5E000641D5 /* AvatarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AvatarView.h; sourceTree = "<group>"; };
 		4FE5B1A31AB58B5E000641D5 /* AvatarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AvatarView.m; sourceTree = "<group>"; };
+		FF0C44E21AB73E7A007C7544 /* EventCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventCell.h; sourceTree = "<group>"; };
+		FF0C44E31AB73E7A007C7544 /* EventCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +99,7 @@
 				4FE5B17E1AB57D28000641D5 /* ViewController.m */,
 				4FE5B19C1AB57D92000641D5 /* ViewControllerDataSource.h */,
 				4FE5B19D1AB57D92000641D5 /* ViewControllerDataSource.m */,
+				FF0C44E51AB73E84007C7544 /* Event Cell */,
 				4FE5B1A51AB58FEB000641D5 /* Views */,
 				4FE5B1801AB57D28000641D5 /* Main.storyboard */,
 				4FE5B1831AB57D28000641D5 /* Images.xcassets */,
@@ -140,6 +144,15 @@
 				4FE5B1A31AB58B5E000641D5 /* AvatarView.m */,
 			);
 			name = Views;
+			sourceTree = "<group>";
+		};
+		FF0C44E51AB73E84007C7544 /* Event Cell */ = {
+			isa = PBXGroup;
+			children = (
+				FF0C44E21AB73E7A007C7544 /* EventCell.h */,
+				FF0C44E31AB73E7A007C7544 /* EventCell.m */,
+			);
+			name = "Event Cell";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -243,6 +256,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4FE5B1A11AB57FCC000641D5 /* SectionHeaderView.m in Sources */,
+				FF0C44E41AB73E7A007C7544 /* EventCell.m in Sources */,
 				4FE5B17F1AB57D28000641D5 /* ViewController.m in Sources */,
 				4FE5B17C1AB57D28000641D5 /* AppDelegate.m in Sources */,
 				4FE5B1A41AB58B5E000641D5 /* AvatarView.m in Sources */,
@@ -440,6 +454,7 @@
 				4FE5B1981AB57D28000641D5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4FE5B1991AB57D28000641D5 /* Build configuration list for PBXNativeTarget "CustomDesignedAgendaTests" */ = {
 			isa = XCConfigurationList;
@@ -448,6 +463,7 @@
 				4FE5B19B1AB57D28000641D5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
